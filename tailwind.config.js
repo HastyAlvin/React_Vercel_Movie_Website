@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // Chỉ định các file chứa JSX, TSX
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        banner: "url('banner.png')",
+      },
+    },
   },
   plugins: [],
 };
