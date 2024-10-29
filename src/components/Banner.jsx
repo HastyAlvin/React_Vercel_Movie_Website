@@ -14,16 +14,17 @@ function Banner() {
           </p>
           <div className="Film title  flex flex-col items-center space-y-4">
             <h1 className="text-white text-5xl">Nghe nói em thích toai</h1>
-          </div>
-          <div className="Rating  flex items-center space-x-3">
-            <img src={IconRating} alt="rating" className="w-8 h-8" />
-            <img src={IconRating} alt="rating" className="w-8 h-8" />
-            <img src={IconRating} alt="rating" className="w-8 h-8" />
-            <img src={IconRating} alt="rating" className="w-8 h-8" />
-            <img src={IconRatingHalf} alt="rating" className="w-8 h-8" />
+
+            <div className="Rating  flex items-center space-x-3">
+              <img src={IconRating} alt="rating" className="w-8 h-8" />
+              <img src={IconRating} alt="rating" className="w-8 h-8" />
+              <img src={IconRating} alt="rating" className="w-8 h-8" />
+              <img src={IconRating} alt="rating" className="w-8 h-8" />
+              <img src={IconRatingHalf} alt="rating" className="w-8 h-8" />
+            </div>
           </div>
           <div>
-            <p className="text-white text-lg">
+            <p className="text-white ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley
