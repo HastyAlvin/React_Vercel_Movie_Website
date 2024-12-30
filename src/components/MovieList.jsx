@@ -1,20 +1,10 @@
-import PropTypes from "prop-types"; //rafce
+import PropTypes from "prop-types"; 
 import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Modal from "react-modal";
 import YouTube from "react-youtube";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
 const opts = {
   height: "390",
   width: "640",
@@ -31,7 +21,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 6,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -94,7 +84,20 @@ const MovieList = ({ title, data }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        style={customStyles}
+        style={{
+          overlay: {
+            position : "fixed",
+            zIndex: 9999
+          },
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+          },
+        }} 
         contentLabel="Example Modal"
       >
         <YouTube videoId={trailerKey} opts={opts} />

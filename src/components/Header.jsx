@@ -1,6 +1,6 @@
-// import React from 'react'
+import PropTypes from "prop-types"
 
-export default function Header() {
+export default function Header(onSearch) {
   return (
     <div className="bg-black  p-4     flex items-center justify-between">
       <div className="Page flex items-center space-x-4">
